@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<audio controls loop id="songplayer" src="audio/easy.mp3"></audio>
+
+<body class="noselect LoadingOverlay">
+
+<!-- Comment this videocontainer out if want to revert-->
+<div id="videocontainer"></div>
+
+<div class="container">
+
+<div id="leftformula" class="formulabox">
+	<div><strong>Add:</strong></div>
+	<div>1+2=12</div>
+	<br>
+	<div><strong>Subtract:</strong></div>
+	<div>1-2=21</div>
+</div>
+
+	<!-- Tutorial Page-->
+	<div id="tutorialpage">
+
+		<h2 id="finalscoredisplay" class="animated tada infinite">Cirno's Math Class!</h2>
+
+		<div id="tutorialcontainer">
+			
+			<div id="retrybuttonscontainer" class="row">
+				<div class="col-xs-6">
+					<div id="easymode" class="animated bounceInLeft retrybuttonsstyle">Easy</div>
+				</div>
+				<div class="col-xs-6">
+					<div id="lunaticmode" class="animated bounceInRight retrybuttonsstyle">Lunatic</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- End Tutorial Page-->
+
+	<!-- Start Trivia Page-->
+	<div id="triviapage">
+		<!-- Question -->
+		<h2 id="questiondisplay" class="animated tada infinite">Cirno's Math Class ⑨</h2>
+		<!-- Answers -->
+		<div id="answerscontainer">
+
+			<div class="row">
+				<div id="answer1" class="animated bounceInDown answers col-xs-12">Answer One</div>
+				<div id="answer1right" class="answersright animated jackInTheBox col-xs-12">Answer One</div>
+				<div id="answer1wrong" class="answerswrong animated hinge col-xs-12">Answer One</div>
+			</div>
+
+			<div class="row">
+				<div id="answer2" class="animated bounceInRight answers col-xs-12">Answer Two</div>
+				<div id="answer2right" class="answersright animated jackInTheBox  col-xs-12">Answer Two</div>
+				<div id="answer2wrong" class="answerswrong animated hinge col-xs-12">Answer Two</div>
+			</div>
+
+			<div class="row">
+				<div id="answer3" class="animated bounceInLeft answers col-xs-12">Answer Three</div>
+				<div id="answer3right" class="answersright animated jackInTheBox  col-xs-12">Answer Three</div>
+				<div id="answer3wrong" class="answerswrong animated hinge col-xs-12">Answer Three</div>
+			</div>
+
+			<div class="row">
+				<div id="answer4" class="animated rubberBand answers col-xs-12">Answer Four</div>
+				<div id="answer4right" class="answersright animated jackInTheBox  col-xs-12">Answer Four</div>
+				<div id="answer4wrong" class="answerswrong animated hinge col-xs-12">Answer Four</div>
+			</div>
+
+		<!-- Score Timer Lives-->
+			<div id="scorelivestimercontainer" class="row">
+				<div class="animated bounceInLeft col-xs-4">
+					<div class="scorelivesstyle">Score</div>
+					<div id="scoredisplay" class="scorelivesstyle">0</div>
+				</div>
+				
+				<div class="col-xs-4 animated flash">
+					<div id="timerdisplay">9</div>
+				</div>
+				
+				<div class="col-xs-4 animated bounceInRight">
+					<div class="scorelivesstyle">Lives</div>
+					<div id="livesdisplay" class="scorelivesstyle">3</div>
+				</div>
+			</div>
+		
+		</div>
+
+	</div>
+	<!-- End Trivia Page -->
+
+	<!-- <video autoplay loop><source src="media/cirnomathclass.mp4" type="video/mp4"></video> -->
+
+<div id="rightformula" class="formulabox">
+	<div><strong>⑨’s!</strong></div>
+	<div>4+5=⑨</div>
+	<br>
+	<div><strong>9's!</strong></div>
+	<div>1+9=10</div>
+</div>
+
+</div>
+
+<!-- Test Buttons -->
+<!-- <div class="container">
+	<button id="newquestion">New Question</button>
+	<button id="newquestionlunatic">Lunatic</button>
+</div> -->
+
+</body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/questions.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+
+</html>
